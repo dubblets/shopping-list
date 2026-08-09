@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping list</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <h1>Shopping list</h1>
+
+    <div class="toolbar">
+      <button class="btn btn-add" id="btnOpenModal">Add</button>
+      <button class="btn btn-save" id="btnSave">Save</button>
+      <button class="btn btn-clear" id="btnClear">Clear List</button>
+    </div>
+
+    <ul class="items-list" id="shoppingList"></ul>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+      <div class="modal-title">New Element</div>
+      <input type="text" id="itemInput" class="input-field" placeholder="Write here what to buy...">
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="btnCancel">Cancel</button>
+        <button class="btn btn-add" id="btnConfirm">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Message</div>
+
+  <script src="js/function.js"></script>
+</body>
+</html>
